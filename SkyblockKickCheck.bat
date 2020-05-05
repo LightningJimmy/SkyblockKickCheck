@@ -1,4 +1,4 @@
-@echo on
+@echo off
 type "%appdata%\.minecraft\logs\blclient\minecraft\latest.log" > "%appdata%\.minecraft\logs\blclient\minecraft\latest.copy.log"
 
 :afkcheck
