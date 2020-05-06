@@ -6,7 +6,7 @@ type "%appdata%\.minecraft\logs\blclient\minecraft\latest.log" | findstr /lvg:"%
 
 echo Last time checked:
 time /T
->nul find "[Important] This server will restart soon: Scheduled Reboot" "%appdata%\.minecraft\logs\blclient\minecraft\compare.log" && (
+>nul find "[Important] This server will restart soon:" "%appdata%\.minecraft\logs\blclient\minecraft\compare.log" && (
   start "" /wait cmd /c "time /T&echo Server Reboot! Time to reconnect!&echo(&pause"
   type "%appdata%\.minecraft\logs\blclient\minecraft\latest.log" > "%appdata%\.minecraft\logs\blclient\minecraft\latest.copy.log"
   echo Log copied to latest.copy.log
